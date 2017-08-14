@@ -10,16 +10,17 @@ namespace POO_Interfaces
     {
         public double lado1, lado2;
 
+        private double X, Y, Z;
         public double x
         {
             get
             {
-                return x;
+                return X;
             }
 
             set
             {
-                
+                X = value;
             }
         }
 
@@ -27,12 +28,12 @@ namespace POO_Interfaces
         {
             get
             {
-                return y;
+                return Y;
             }
 
             set
             {
-               
+                Y = value;
             }
         }
 
@@ -40,12 +41,12 @@ namespace POO_Interfaces
         {
             get
             {
-                return z;
+                return Z;
             }
 
             set
             {
-                
+                Z = value;
             }
         }
 
