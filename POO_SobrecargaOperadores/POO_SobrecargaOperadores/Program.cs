@@ -10,12 +10,18 @@ namespace POO_SobrecargaOperadores
     {
         static void Main(string[] args)
         {
-            Vetor A = new Vetor();
-            Vetor B = new Vetor();
 
-            Vetor R = A + B;
+            Vet A = new Vet();
+            Vet B = new Vet();
 
+            Vet R = A + B;
             R.display();
+
+            Vet R2 = A - B;
+            R2.display();
+
+            int Res = A * B;
+            Console.WriteLine("Resultado = " + Res + "\n");
 
             Console.WriteLine("Pressione qualquer tecla para continuar ...");
             Console.ReadKey();
