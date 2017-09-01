@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayL.cs" />
+    <Compile Include="Dicionario.cs" />
     <Compile Include="Lista.cs" />
     <Compile Include="ListaOrdenada.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabelaDados.cs" />
+    <Compile Include="TabelaHash.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
