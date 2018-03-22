@@ -8,23 +8,21 @@ namespace ContaBancaria
 {
     class Conta
     {
-        private string Agencia;
+        private Agencia Agencia;
         private string Numero;
         private string Titular;
         private string Senha;
         private double Saldo;
 
 
-        public Conta()
+        public Conta(Agencia Agencia)
         {
             Saldo = 0.0;
             Senha = "12345678";
             Random r = new Random();
             Numero = r.Next(10000 , 99999).ToString();
 
-
-            Console.Write("Informe a agência: ");
-            Agencia = Console.ReadLine();
+            this.Agencia = Agencia;
             Console.Write("Informe o titular: ");
             Titular = Console.ReadLine();
 
@@ -33,7 +31,7 @@ namespace ContaBancaria
         public void display()
         {
             Console.WriteLine("Conta: " + Numero);
-            Console.WriteLine("Agencia: " + Agencia);
+            Console.WriteLine("Agência: " + Agencia.getNumero());
             Console.WriteLine("Titular: " + Titular);
             Console.WriteLine("Saldo: " + Saldo);
         }
@@ -43,7 +41,7 @@ namespace ContaBancaria
             return Titular;
         }
 
-        public string getAgencia()
+        public Agencia getAgencia()
         {
             return Agencia;
         }
@@ -57,7 +55,7 @@ namespace ContaBancaria
             return Saldo;
         }
 
-        public void setAgencia(string Agencia)
+        public void setAgencia(Agencia Agencia)
         {
             this.Agencia = Agencia;
         }
