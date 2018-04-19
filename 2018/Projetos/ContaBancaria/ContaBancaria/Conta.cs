@@ -28,8 +28,28 @@ namespace ContaBancaria
 
         }
 
+        public Conta(Agencia Agencia, string Numero)
+        {
+            Saldo = 0.0;
+            Senha = "12345678";
+            this.Numero = Numero;
+
+            this.Agencia = Agencia;
+            Console.Write("Informe o titular: ");
+            Titular = Console.ReadLine();
+        }
+
         public void display()
         {
+            Console.WriteLine("Conta: " + Numero);
+            Console.WriteLine("Agência: " + Agencia.getNumero());
+            Console.WriteLine("Titular: " + Titular);
+            Console.WriteLine("Saldo: " + Saldo);
+        }
+
+        public void display(string Msg)
+        {
+            Console.WriteLine(Msg);
             Console.WriteLine("Conta: " + Numero);
             Console.WriteLine("Agência: " + Agencia.getNumero());
             Console.WriteLine("Titular: " + Titular);

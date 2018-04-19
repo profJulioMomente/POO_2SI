@@ -14,7 +14,7 @@ namespace ContaBancaria
 
             Conta C1 = new Conta(Unilago);
 
-            C1.display();
+            C1.display("Teste");
 
             C1.depositar(123.45);
             Console.WriteLine("O saldo é : " + C1.getSaldo());
@@ -24,7 +24,7 @@ namespace ContaBancaria
             Console.WriteLine("\n\nPressione qualquer tecla para terminar ...");
             Console.ReadKey();
 
-            Conta C2 = new Conta(Unilago);
+            Conta C2 = new Conta(Unilago, "99999");
 
             C2.display();
 
