@@ -12,6 +12,8 @@ namespace POO2018_Heranca
         {
             Mensalista M = new Mensalista();
 
+            M.imprimirNome();
+
             M.displayDados();
 
             Console.WriteLine("Pressione qualquer tecla para continuar...");

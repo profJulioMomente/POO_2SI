@@ -8,7 +8,7 @@ namespace POO2018_Heranca
 {
     class Funcionario
     {
-        protected string Nome;
+        private string Nome;
         protected string Matricula;
 
         public Funcionario()
@@ -24,6 +24,16 @@ namespace POO2018_Heranca
 
             Console.Write("Informe a matrícula do funcionário: ");
             Matricula = Console.ReadLine();
+        }
+
+        public void imprimirNome()
+        {
+            Console.WriteLine("Nome: " + Nome);
+        }
+
+        protected string getNome()
+        {
+            return Nome;
         }
     }
 }

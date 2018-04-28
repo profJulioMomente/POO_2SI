@@ -18,7 +18,7 @@ namespace POO2018_Heranca
 
         public void displayDados()
         {
-            Console.WriteLine("Nome: " + Nome);
+            imprimirNome();
             Console.WriteLine("Matrícula: " + Matricula);
             Console.WriteLine("Salário: " + Salario);
         }
