@@ -11,11 +11,7 @@ namespace POO2018_Heranca
         private string Nome;
         protected string Matricula;
 
-        public Funcionario()
-        {
-            
-
-        }
+        public Funcionario() {}
 
         public Funcionario(int ctrl)
         {
@@ -34,6 +30,16 @@ namespace POO2018_Heranca
         protected string getNome()
         {
             return Nome;
+        }
+
+        public void displayDados()
+        {
+            Console.WriteLine("Nome: " + Nome);
+            Console.WriteLine("Matrícula: " + Matricula);
+        }
+
+        public virtual void calcularRendimento() {
+            Console.WriteLine("Dados de rendimento não especificados");
         }
     }
 }

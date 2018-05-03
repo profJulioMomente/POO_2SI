@@ -10,11 +10,20 @@ namespace POO2018_Heranca
     {
         static void Main(string[] args)
         {
-            Mensalista M = new Mensalista();
+            Console.WriteLine("Mensalista");
+            Mensalista M1 = new Mensalista();
 
-            M.imprimirNome();
+            Console.WriteLine("Horista");
+            Horista H1 = new Horista();
 
-            M.displayDados();
+            Console.WriteLine("Funcionario");
+            Funcionario F1 = new Funcionario(0);
+
+            Console.WriteLine("Empresa");
+            Empresa MinhaEmpresa = new Empresa(M1 , H1 , F1);
+
+            MinhaEmpresa.mostrarRendimentos();
+
 
             Console.WriteLine("Pressione qualquer tecla para continuar...");
             Console.ReadKey();

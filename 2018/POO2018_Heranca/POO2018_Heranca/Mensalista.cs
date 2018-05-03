@@ -16,11 +16,21 @@ namespace POO2018_Heranca
             Salario = Convert.ToDouble(Console.ReadLine());
         }
 
-        public void displayDados()
+        public new void displayDados()
         {
             imprimirNome();
             Console.WriteLine("Matrícula: " + Matricula);
             Console.WriteLine("Salário: " + Salario);
+        }
+
+        public override void calcularRendimento()
+        {
+            Console.WriteLine("Rendimento: " + Salario);
+        }
+
+        public void Teste()
+        {
+            Console.WriteLine("Teste");
         }
     }
 }
