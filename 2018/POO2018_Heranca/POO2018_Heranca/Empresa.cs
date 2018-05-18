@@ -10,7 +10,25 @@ namespace POO2018_Heranca
     {
         private string RazaoSocial;
         private string CNPJ;
-        private Funcionario[] F = new Funcionario[3];
+        private List<Funcionario> LFuncionario;
+
+        public Empresa()
+        {
+            LFuncionario = new List<Funcionario>();
+        }
+
+        public void cadastrarFuncionario(Funcionario F)
+        {
+            //Adicionar
+            LFuncionario.Add(F);
+
+            //Percorrer a lista
+            foreach(Funcionario x in LFuncionario)
+            {
+                x.displayDados();
+            }
+
+        }
 
         public Empresa(Funcionario F1, Funcionario F2, Funcionario F3)
         {
@@ -19,9 +37,9 @@ namespace POO2018_Heranca
             RazaoSocial = Console.ReadLine();
             Console.Write("Informe o CNPJ: ");
             CNPJ = Console.ReadLine();
-            F[0] = F1;
-            F[1] = F2;
-            F[2] = F3;
+            //F[0] = F1;
+            //F[1] = F2;
+            //F[2] = F3;
         }
 
         public void mostrarNomes()
