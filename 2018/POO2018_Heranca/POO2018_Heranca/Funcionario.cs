@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POO2018_Heranca
 {
-    class Funcionario
+    abstract class Funcionario
     {
         private string Nome;
         protected string Matricula;
@@ -38,8 +38,6 @@ namespace POO2018_Heranca
             Console.WriteLine("Matrícula: " + Matricula);
         }
 
-        public virtual void calcularRendimento() {
-            Console.WriteLine("Dados de rendimento não especificados");
-        }
+        public abstract void calcularRendimento();
     }
 }
